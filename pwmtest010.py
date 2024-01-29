@@ -8,7 +8,7 @@ GPIO.setup(12, GPIO.IN) # PWM 신호를 읽기 위한 핀 설정
 GPIO.setup(13, GPIO.OUT) # PWM 신호를 출력하기 위한 핀 설정
 
 pwm_out = GPIO.PWM(13, 50) # 13번 핀에 100Hz의 PWM 신호를 출력
-pwm_out.start(3.0) # 초기 듀티비 설정
+pwm_out.start(0.0) # 초기 듀티비 설정
 
 try:
     while True:
