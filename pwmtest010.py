@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 # GPIO 핀번호 설정
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.in) # PWM 신호를 읽기 위한 핀 설정
-GPIO.setup(12. GPIO.out) # PWM 신호를 출력하기 위한 핀 설정
+GPIO.setup(12, GPIO.out) # PWM 신호를 출력하기 위한 핀 설정
 
 pwm_out = GPIO.PWM(12, 100) # 12번 핀에 100Hz의 PWM 신호를 출력
 pwm_out.start(0) # 초기 듀티비 설정
