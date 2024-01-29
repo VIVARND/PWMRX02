@@ -18,5 +18,5 @@ try:
     time.sleep(0,1) #0.1초 동안 대기
 except KeyboardInterrupt:
     pwm_out.stop()
-    GPIO.cleanup()    
+    GPIO.cleanup() # 초기화    
       
